@@ -17,11 +17,14 @@ describe('helloWorld', function() {
 //Exercise 1
 describe('sayHello', function() {
     it('should be defined as a function', function(){
-        expect(typeof sayHello).toBe('function')
+        expect(typeof sayHello).toBe('function');
     });
 //    exercise 2
     it('should return a string when called.', function() {
         expect(typeof sayHello()).toBe('string');
+    });
+    it('should return the string "Hello, Jane!" when executed', function(){
+        expect(sayHello()).toBe("Hello, Jane!");
     });
 });
 

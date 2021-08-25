@@ -5,11 +5,11 @@ function helloWorld() {
 }
 
 function sayHello(input) {
-    if(input === 'Alex') {
-        return 'Hello, Alex!';
-    } else if(input === 'Pat') {
-        return 'Hello, Pat!';
-    } else if(input == '') {
+    // if(input === 'Alex') {
+    //     return 'Hello, Alex!';
+    // } else if(input === 'Pat') {
+    //     return 'Hello, Pat!';
+     if(input == '') {
         return 'Hello, World!';
     } else if(typeof input === 'string'){
         //     return 'Hello, Jane!';

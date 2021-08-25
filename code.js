@@ -26,4 +26,8 @@ function sayHello(input) {
 
 //exercise 6 ^
 
-
+function ifFive(input) {
+    if (input == 5) {
+        return input == 5;
+    };
+};

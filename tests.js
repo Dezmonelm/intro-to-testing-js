@@ -40,3 +40,9 @@ describe('sayHello', function() {
     expect(sayHello(true)).toBe("Hello, World!")})
 });
 
+//exercise 10
+describe('isFive', function () {
+    it('Should be defined as a function', function () {
+        expect(typeof ifFive).toBe('function');
+    });
+});

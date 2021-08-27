@@ -115,13 +115,13 @@ describe('add', function () {
         expect(add('-4', '10')).toBe(6);
     });
     it('conditions "banana" and "split" should return NaN when passed into the function', function () {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(add("banana", "split")).toBeNaN();
     });
     it('conditions 2 and "apples" should return NaN when passed into the function', function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBeNaN();
     });
     it('conditions is empty it should return NaN when passed into the function', function () {
-        expect(add()).toBe(NaN);
+        expect(add()).toBeNaN();
     });
 
 });

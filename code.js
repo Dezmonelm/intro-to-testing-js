@@ -2,7 +2,7 @@
 // helloWorld function
 function helloWorld() {
     return "Hello, World!";
-}
+};
 
 function sayHello(input) {
     // if(input === 'Alex') {
@@ -34,7 +34,7 @@ function ifFive(input) {
     } else {
         return false;
     }
-}
+};
 
 function isEven(x) {
     if(typeof x == 'string') {
@@ -42,6 +42,19 @@ function isEven(x) {
     } else if (x % 2 === 0) {
         return true;
     }else {
+        return false;
+    }
+};
+
+
+function isVowel(input) {
+    if (input === upperCaseVowels) {
+        return true;
+    }else if(input === lowerCaseVowels) {
+        return true;
+    }else if(input === 'y') {
+            return false;
+    } else {
         return false;
     }
 };

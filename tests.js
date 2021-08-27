@@ -1,7 +1,9 @@
-const oddNumbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-const negOddNumbers = [-1, -3, -5, -7, -9, -11, -13, -15, -17, -19]
+const upperCaseVowels = ['A', 'E', 'I', 'O', 'U',];
+const lowerCaseVowels = ['a', 'e', 'i', 'o', 'u'];
+const oddNumbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
+const negOddNumbers = [-1, -3, -5, -7, -9, -11, -13, -15, -17, -19];
 const evenNumbers = [2, 4, 6, 8, 10, 12, 14, 16 ,18 ,20];
-const negEvenNumbers = [-2, -4, -6, -8, -10, -12, -14, -16 ,-18 ,-20]
+const negEvenNumbers = [-2, -4, -6, -8, -10, -12, -14, -16 ,-18 ,-20];
 const randomNumber = Math.floor(Math.random() * 10);
 const randomEvenNumber = evenNumbers[randomNumber];
 const randomOddNumber = oddNumbers[randomNumber];
@@ -80,4 +82,17 @@ describe('isEven', function() {
     it('should return false when words pass through as a string', function(){
         expect(isEven('string')).toBe(false);
     });
+});
+
+// exercise 12
+describe('isVowel', function () {
+    it('should be defined as function', function () {
+        expect(typeof isVowel).toBe('function');
+        });
+    it('should pass true as a boolean', function () {
+        expect(typeof isVowel()).toBe('boolean');
+        });
+    it('should return false when passing the letter y' , function () {
+        expect(isVowel('y')).toBe(false);
+        });
 });

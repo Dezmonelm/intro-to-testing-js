@@ -29,5 +29,19 @@ function sayHello(input) {
 function ifFive(input) {
     if (input == 5) {
         return input == 5;
-    };
+    }else if (input === '5') {
+            return input ===5
+    } else {
+        return false;
+    }
+}
+
+function isEven(x) {
+    if(typeof x == 'string') {
+        return false;
+    } else if (x % 2 === 0) {
+        return true;
+    }else {
+        return false;
+    }
 };

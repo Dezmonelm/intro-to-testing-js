@@ -1,3 +1,10 @@
+const oddNumbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+const negOddNumbers = [-1, -3, -5, -7, -9, -11, -13, -15, -17, -19]
+const evenNumbers = [2, 4, 6, 8, 10, 12, 14, 16 ,18 ,20];
+const negEvenNumbers = [-2, -4, -6, -8, -10, -12, -14, -16 ,-18 ,-20]
+const randomNumber = Math.floor(Math.random() * 10);
+const randomEvenNumber = evenNumbers[randomNumber];
+const randomOddNumber = oddNumbers[randomNumber];
 // Unit tests for the helloWorld function
 describe('helloWorld', function() {
     it('should be a defined function', function() {
@@ -44,5 +51,33 @@ describe('sayHello', function() {
 describe('isFive', function () {
     it('Should be defined as a function', function () {
         expect(typeof ifFive).toBe('function');
+    });
+    it('should pass as a string when call', function() {
+        expect(ifFive('5')).toBe(true);
+    });
+    it('does 5 return true', function() {
+        expect(ifFive(5)).toBe(true);
+    });
+    it('should pass as a boolean', function() {
+        expect(ifFive(5)).toBe(true);
+    });
+});
+
+//Exercise 11
+describe('isEven', function() {
+    it('should be define as a function', function(){
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean when function is called', function(){
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true when an even number is passed', function(){
+        expect(isEven(randomEvenNumber)).toBe(true);
+    });
+    it('should return false when an odd number is passed', function(){
+        expect(isEven(randomOddNumber)).toBe(false);
+    });
+    it('should return false when words pass through as a string', function(){
+        expect(isEven('string')).toBe(false);
     });
 });
